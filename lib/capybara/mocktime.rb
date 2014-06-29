@@ -34,8 +34,7 @@ module Capybara
 
       def render_snippet
         <<-JAVASCRIPT
-        <script src="/bower_components/sinon/lib/sinon.js"></script>
-        <script src="/bower_components/sinon/lib/sinon/util/fake_timers.js"></script>
+        <script src="/appointments/assets/sinon.js"></script>
         <script>
         window.clock = sinon.useFakeTimers(#{Time.now.to_i * 1000});
         </script>
